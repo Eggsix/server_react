@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "axios": "^0.13.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
     "babel-preset-stage-1": "^6.1.18",
     "express": "^4.14.0",
     "lodash": "^3.10.1",

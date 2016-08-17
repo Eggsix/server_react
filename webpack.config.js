@@ -1,8 +1,14 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
   devtool: 'eval',
   entry: [
     './src/index.js'
   ],
+  resolveLoader: {
+    root: path.join(__dirname, 'node_modules')
+  },
   output: {
     path: __dirname,
     publicPath: '/',
@@ -25,3 +31,4 @@ module.exports = {
     contentBase: './'
   }
 };
+

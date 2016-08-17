@@ -2,8 +2,14 @@ import axios from 'axios';
 import { browserHistory } from 'react-router';
 import { AUTH_USER, AUTH_ERROR, UNAUTH_USER } from './types';
 
+const env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-const ROOT_URL = "http://localhost:3090";
+if (env === 'development') {
+	const ROOT_URL = "http://localhost:3090";
+} else {
+	const ROOT_URL = "bush-server.herokuapp.com";
+}
+
 
 export function signinUser({ email, password}) {
 	return function(dispatch) {

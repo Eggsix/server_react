@@ -12,14 +12,14 @@ import Signup from './components/auth/signup';
 import Home from './components/home';
 import reducers from './reducers';
 
-import './assets/css/font-awesome.min.css';
-import './assets/css/skel.css';
-import './assets/css/style-large.css';
-import './assets/css/style-medium.css';
-import './assets/css/style-small.css';
-import './assets/css/style-xlarge.css';
-import './assets/css/style-xsmal.css';
-import './assets/css/style.css';
+// import './assets/css/font-awesome.min.css';
+// import './assets/css/skel.css';
+// import './assets/css/style-large.css';
+// import './assets/css/style-medium.css';
+// import './assets/css/style-small.css';
+// import './assets/css/style-xlarge.css';
+// import './assets/css/style-xsmal.css';
+// import './assets/css/style.css';
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 

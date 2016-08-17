@@ -7,12 +7,10 @@ module.exports = {
     'webpack-hot-middleware/client',
     './src/index.js'
   ],
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
-  },
+ 
   output: {
     path: path.join(__dirname, 'public'),
-    publicPath: '/',
+    publicPath: '/public',
     filename: 'bundle.js'
   },
   plugins: [
@@ -33,12 +31,5 @@ module.exports = {
         loader: 'file'}
     ]
   },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
-  },
-  devServer: {
-    historyApiFallback: true,
-    contentBase: './'
-  }
 };
 

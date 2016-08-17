@@ -6,9 +6,6 @@ module.exports = {
   entry: [
     './src/index'
   ],
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
-  },
   
   output: {
     path: path.join(__dirname, 'public'),

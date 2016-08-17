@@ -12,13 +12,22 @@ import Signup from './components/auth/signup';
 import Home from './components/home';
 import reducers from './reducers';
 
+import './assets/css/font-awesome.min.css';
+import './assets/css/skel.css';
+import './assets/css/style-large.css';
+import './assets/css/style-medium.css';
+import './assets/css/style-small.css';
+import './assets/css/style-xlarge.css';
+import './assets/css/style-xsmal.css';
+import './assets/css/style.css';
+
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
   	<Router history={browserHistory} >
   		<Route path="/" component={App}>
-        <Route path="home" component={Home} />
+        <IndexRoute component={Home} />
   			<Route path="signin" component={Signin} />
   			<Route path="signout" component={Signout} />
   			<Route path="signup" component={Signup} />
